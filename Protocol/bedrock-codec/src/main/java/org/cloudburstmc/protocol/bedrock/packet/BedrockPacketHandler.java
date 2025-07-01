@@ -887,4 +887,24 @@ public interface BedrockPacketHandler extends PacketHandler {
     default PacketSignal handle(MovementPredictionSyncPacket packet) {
         return PacketSignal.UNHANDLED;
     }
+
+    default PacketSignal handle(UpdateClientOptionsPacket packet) {
+        return PacketSignal.UNHANDLED;
+    }
+
+    default PacketSignal handle(PlayerVideoCapturePacket packet) {
+        return PacketSignal.UNHANDLED;
+    }
+
+    default PacketSignal handle(PlayerUpdateEntityOverridesPacket packet) {
+        return PacketSignal.UNHANDLED;
+    }
+
+    default PacketSignal handle(PlayerLocationPacket playerLocationPacket) {
+        return PacketSignal.UNHANDLED;
+    }
+
+    default PacketSignal handle(ClientboundControlSchemeSetPacket clientboundControlSchemeSetPacket) {
+        return PacketSignal.UNHANDLED;
+    }
 }
